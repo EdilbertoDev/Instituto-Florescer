@@ -3,10 +3,10 @@ const WHATSAPP = "5591981901986";
 
 // Lista das oficinas oferecidas (edite à vontade). O campo "imagem" aparece no lugar do link "Agendar"
 const oficinas = [
-  { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.JPEG" },
-  { nome: "Oficina de preparação para o parto", info: "Semanal · 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.JPEG" },
-  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.JPEG" },
-  { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.JPEG" }
+  { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.jpeg" },
+  { nome: "Oficina de preparação para o parto", info: "Semanal · 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.jpeg" },
+  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.jpeg" },
+  { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.jpeg" }
 ];
 
 // Lista dos minicursos oferecidos (edite à vontade)
