@@ -3,19 +3,19 @@ const WHATSAPP = "5591981901986";
 
 // Lista das oficinas oferecidas (edite à vontade). O campo "imagem" aparece no lugar do link "Agendar"
 const oficinas = [
-  { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.jpeg"},
-  { nome: "Oficina de preparação para o parto", info: "Semanal · 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.jpeg" },
-  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.jpeg" },
-  { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.jpeg" }
+  { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.JPEG" },
+  { nome: "Oficina de preparação para o parto", info: "Semanal · 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.JPEG" },
+  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.JPEG" },
+  { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.JPEG" }
 ];
 
 // Lista dos minicursos oferecidos (edite à vontade)
 const minicursos = [
   { nome: "Primeiros socorros para bebês", info: "Disponível semanalmente", texto: "Prevenção de acidentes, engasgo, reconhecimento de emergências e demonstração de manobras em manequins, com instrutor capacitado.", imagem: "imagens/Primeiros-socorros-para-bebês.png" },
   { nome: "Sinais de alerta na gestação", info: "Disponível semanalmente", texto: "Reconhecimento dos principais sinais de risco na gestação, como sangramentos, dores intensas, febre e diminuição dos movimentos do bebê, e orientações sobre quando procurar atendimento de saúde.", imagem: "imagens/Sinais de alerta na gestação.png" },
-  { nome: "Saúde emocional no puerpério", info: "Disponível semanalmente", texto: "Mudanças emocionais após o parto, estratégias de autocuidado, fortalecimento da rede de apoio e identificação de sinais de alerta para a saúde mental materna.", imagem: "imagens/Saúde emocional no puerpério.png}
-" }
+  { nome: "Saúde emocional no puerpério", info: "Disponível semanalmente", texto: "Mudanças emocionais após o parto, estratégias de autocuidado, fortalecimento da rede de apoio e identificação de sinais de alerta para a saúde mental materna.", imagem: "imagens/Saúde emocional no puerpério.png" }
 ];
+
 
 // Guarda o texto da mensagem para cada cartão, usado no link do WhatsApp
 function linkWhats(mensagem) {
