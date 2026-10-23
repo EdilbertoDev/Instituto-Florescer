@@ -5,7 +5,7 @@ const WHATSAPP = "5591981901986";
 const oficinas = [
   { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.jpeg"},
   { nome: "Oficina de preparação para o parto", info: "Semanal · 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.jpeg" },
-  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.JPEG" },
+  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.jpeg" },
   { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.JPEG" }
 ];
 
