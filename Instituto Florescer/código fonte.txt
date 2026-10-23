@@ -1,0 +1,492 @@
+HTML
+
+<!DOCTYPE html>
+<!-- Declara que o documento usa HTML5 -->
+<html lang="pt-BR">
+<!-- Raiz da página, idioma português do Brasil -->
+<head>
+  <!-- Início das configurações da página -->
+  <meta charset="UTF-8">
+  <!-- Permite acentos e caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Faz o site se adaptar a celulares -->
+  <title>Instituto Florescer | Cuidado para gestantes e puérperas</title>
+  <!-- Título que aparece na aba do navegador -->
+  <meta name="description" content="Acompanhamento humanizado para gestantes e puérperas, com oficinas, grupos e equipe multiprofissional.">
+  <!-- Descrição usada pelo Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Acelera a conexão com as fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Carrega as fontes Lora (títulos) e Nunito (textos) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Liga o arquivo de estilos -->
+</head>
+<!-- Fim das configurações -->
+<body>
+  <!-- Início do conteúdo visível -->
+
+  <header class="topo" id="topo">
+    <!-- Cabeçalho fixo com logo e menu -->
+    <div class="container topo__interno">
+      <!-- Caixa que centraliza o conteúdo -->
+      <a href="#inicio" class="logo"><img src="imagens/Logo2.png" alt="Instituto Florescer"></a>
+      <!-- Logo do instituto (imagem), leva ao início -->
+      <button class="menu-botao" id="menuBotao" aria-label="Abrir menu">☰</button>
+      <!-- Botão que abre o menu no celular -->
+      <nav class="menu" id="menu">
+        <!-- Menu de navegação -->
+        <a href="#sobre">Quem somos</a>
+        <!-- Link para a seção Sobre -->
+        <a href="#oficinas">Oficinas</a>
+        <!-- Link para as oficinas -->
+        <a href="#minicursos">Minicursos</a>
+        <!-- Link para os minicursos -->
+        <a href="#agendar" class="menu__destaque">Agendar</a>
+        <!-- Link de agendamento em destaque -->
+      </nav>
+      <!-- Fim do menu -->
+    </div>
+    <!-- Fim da caixa centralizada -->
+  </header>
+  <!-- Fim do cabeçalho -->
+
+  <section class="inicio" id="inicio">
+    <!-- Seção de abertura -->
+    <div class="container inicio__grade">
+      <!-- Divide em texto e quadro de destaque -->
+      <div>
+        <!-- Coluna do texto -->
+        <p class="etiqueta">Cuidado humanizado na gestação e no puerpério</p>
+        <!-- Frase pequena acima do título -->
+        <h1>Acolher, orientar e florescer em cada etapa da maternidade.</h1>
+        <!-- Título principal -->
+        <p class="inicio__texto">Acompanhamento humanizado, suporte de doulas, oficinas e grupos de apoio para acolher mulheres e famílias durante a gestação e o pós-parto.</p>
+        <!-- Texto de apoio -->
+        <a href="#agendar" class="botao">Quero agendar uma conversa</a>
+        <!-- Botão principal -->
+      </div>
+      <!-- Fim da coluna do texto -->
+      <aside class="quadro">
+        <!-- Quadro com números de apoio -->
+        <p class="quadro__titulo">Nosso compromisso</p>
+        <!-- Título do quadro -->
+        <!-- Frase do compromisso -->
+        <ul>
+          <!-- Lista de pontos -->
+          <li><b>Cuidado especializado</b></li>
+          <p>Acompanhamento multiprofissional atento às necessidades de cada mulher durante a gestação e o puerpério.</p>
+          <!-- Ponto 1 -->
+          <li><b>Direitos e autonomia</b></li>
+          <p>Orientação para que cada mulher conheça seus direitos e participe das decisões sobre o próprio cuidado.</p>
+          <!-- Ponto 2 -->
+          <li><b>Vínculos e aprendizado</b></li>
+          <p>Oficinas e grupos de apoio que favorecem a troca de experiências e a preparação para a chegada do bebê.</p>
+          <!-- Ponto 3 -->
+        </ul>
+        <!-- Fim da lista -->
+      </aside>
+      <!-- Fim do quadro -->
+    </div>
+    <!-- Fim da grade -->
+  </section>
+  <!-- Fim da abertura -->
+
+  <section class="secao" id="sobre">
+    <!-- Seção sobre o instituto -->
+    <div class="container sobre">
+      <!-- Caixa em duas colunas -->
+      <div>
+        <!-- Coluna do título -->
+        <p class="etiqueta">Quem somos</p>
+        <!-- Etiqueta da seção -->
+        <h2>Um cuidado que vai além da gestação.</h2>
+        <!-- Título da seção -->
+      </div>
+      <!-- Fim da coluna do título -->
+      <div>
+        <!-- Coluna do texto -->
+        <p>O Instituto Florescer nasceu da vontade de tornar a gestação e o puerpério momentos mais seguros e acolhedores. Acreditamos que informação de qualidade e cuidado especializado salvam vidas.
+</p>
+        <!-- Parágrafo 1 -->
+        <p>Nossa equipe reúne profissionais de diferentes áreas que atuam juntos, olhando para a mulher por inteiro: corpo, emoções e rede de apoio. Por meio de oficinas e grupos, ajudamos as mamães a se sentirem preparadas, fortalecerem sua autonomia e vivenciarem a maternidade com mais confiança e segurança.</p>
+        <!-- Parágrafo 2 -->
+      </div>
+      <!-- Fim da coluna do texto -->
+    </div>
+    <!-- Fim da caixa -->
+  </section>
+  <!-- Fim do sobre -->
+
+  <section class="secao secao--rosada" id="oficinas">
+    <!-- Seção de oficinas -->
+    <div class="container">
+      <!-- Centraliza o conteúdo -->
+      <p class="etiqueta">Encontros presenciais</p>
+      <!-- Etiqueta -->
+      <h2>Oficinas e grupos</h2>
+      <!-- Título -->
+      <div class="cartoes" id="listaOficinas"></div>
+      <!-- Os cartões são criados pelo script.js -->
+    </div>
+    <!-- Fim do conteúdo -->
+  </section>
+  <!-- Fim das oficinas -->
+
+  <section class="secao" id="minicursos">
+    <!-- Seção de minicursos -->
+    <div class="container">
+      <!-- Centraliza o conteúdo -->
+      <p class="etiqueta">Para aprender no seu ritmo</p>
+      <!-- Etiqueta -->
+      <h2>Minicursos</h2>
+      <!-- Título -->
+      <div class="cartoes" id="listaMinicursos"></div>
+      <!-- Os cartões são criados pelo script.js -->
+    </div>
+    <!-- Fim do conteúdo -->
+  </section>
+  <!-- Fim dos minicursos -->
+
+  <section class="secao secao--verde" id="agendar">
+    <!-- Seção de agendamento -->
+    <div class="container agenda">
+      <!-- Caixa do formulário -->
+      <div>
+        <!-- Coluna do texto -->
+        <p class="etiqueta">Agendamento</p>
+        <!-- Etiqueta -->
+        <h2>Seu cuidado começa aqui.</h2>
+        <!-- Título -->
+        <p>Agende seu atendimento e encontre o acompanhamento ideal para você e sua família durante a gestação e o pós-parto.</p>
+        <!-- Explicação -->
+      </div>
+      <!-- Fim do texto -->
+      <form id="formAgenda" class="formulario">
+        <!-- Formulário de agendamento -->
+        <label for="nome">Seu nome</label>
+        <!-- Rótulo do nome -->
+        <input type="text" id="nome" required>
+        <!-- Campo do nome -->
+        <label for="fase">Como você está?</label>
+        <!-- Rótulo da fase -->
+        <select id="fase">
+          <!-- Lista de fases -->
+          <option>Gestante</option>
+          <!-- Opção 1 -->
+          <option>Puérpera (após o parto)</option>
+          <!-- Opção 2 -->
+          <option>Tentando engravidar</option>
+          <!-- Opção 3 -->
+        </select>
+        <!-- Fim da lista -->
+        <label for="interesse">Tenho interesse em</label>
+        <!-- Rótulo do interesse -->
+        <select id="interesse"></select>
+        <!-- Opções preenchidas pelo script.js -->
+        <button type="submit" class="botao">Continuar no WhatsApp</button>
+        <!-- Botão de envio -->
+      </form>
+      <!-- Fim do formulário -->
+    </div>
+    <!-- Fim da caixa -->
+  </section>
+  <!-- Fim do agendamento -->
+
+  <footer class="rodape">
+    <!-- Rodapé -->
+    <div class="container">
+      <!-- Centraliza o conteúdo -->
+      <p>© <span id="ano"></span> Instituto Florescer. Todos os direitos reservados.</p>
+      <!-- Direitos autorais, ano vem do script -->
+    </div>
+    <!-- Fim do conteúdo -->
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <script src="script.js"></script>
+  <!-- Liga o arquivo de comportamento -->
+</body>
+<!-- Fim do corpo -->
+</html>
+<!-- Fim do documento -->
+
+CSS
+
+/* Cores e medidas usadas em todo o site */
+:root {
+  --creme: #fbf6f0;            /* fundo geral, tom de creme */
+  --rosa: #f4dcd6;             /* rosa suave das seções */
+  --rosa-escuro: #c9776b;      /* rosa terroso para destaques */
+  --verde: #dfe8dc;            /* verde bem claro */
+  --verde-escuro: #4f6b55;     /* verde para textos de destaque */
+  --texto: #3d3530;            /* marrom quase preto, mais suave que preto */
+  --raio: 18px;                /* arredondamento padrão */
+}
+
+/* Zera margens e usa cálculo de tamanho mais simples */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Rolagem suave ao clicar nos links do menu */
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+/* Aparência geral do texto */
+body {
+  font-family: 'Nunito', Arial, sans-serif; /* fonte dos textos */
+  background: var(--creme);                 /* cor de fundo */
+  color: var(--texto);                      /* cor do texto */
+  line-height: 1.7;                         /* espaço entre linhas */
+}
+
+/* Caixa que limita a largura do conteúdo */
+.container { width: min(1050px, 90%); margin: 0 auto; }
+
+/* Títulos usam fonte com serifa */
+h1, h2, .logo { font-family: 'Lora', Georgia, serif; line-height: 1.25; }
+
+/* Tamanho do título principal */
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 18px; }
+
+/* Tamanho dos títulos de seção */
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 20px; }
+
+/* Etiqueta pequena acima dos títulos */
+.etiqueta {
+  color: var(--rosa-escuro);   /* cor da etiqueta */
+  font-weight: 600;            /* letra mais firme */
+  font-size: .9rem;            /* tamanho menor */
+  margin-bottom: 8px;          /* espaço abaixo */
+}
+
+/* ---------- Cabeçalho ---------- */
+.topo {
+  position: sticky; top: 0; z-index: 10;       /* fica fixo no topo */
+  background: rgba(251, 246, 240, .95);        /* creme quase opaco */
+  border-bottom: 1px solid #eadfd6;            /* linha fina embaixo */
+}
+
+/* Alinha logo e menu lado a lado */
+.topo__interno { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+
+/* Estilo do nome do instituto */
+.logo { font-size: 1.4rem; font-weight: 600; text-decoration: none; color: var(--texto); }
+
+/* Logo em imagem: altura fixa e largura proporcional */
+.logo img { display: block; height: 68px; width: auto; }
+
+/* Links do menu */
+.menu a { margin-left: 22px; text-decoration: none; color: var(--texto); font-weight: 600; }
+
+/* Muda a cor ao passar o mouse */
+.menu a:hover { color: var(--rosa-escuro); }
+
+/* Link "Agendar" parecido com botão */
+.menu__destaque { background: var(--rosa-escuro); color: #fff !important; padding: 8px 18px; border-radius: 30px; }
+
+/* Botão do menu escondido no computador */
+.menu-botao { display: none; background: none; border: 0; font-size: 1.6rem; cursor: pointer; color: var(--texto); }
+
+/* ---------- Abertura ---------- */
+.inicio { padding: 70px 0 60px; background: linear-gradient(180deg, var(--rosa) 0%, var(--creme) 100%); }
+
+/* Duas colunas: texto e quadro */
+.inicio__grade { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: center; }
+
+/* Texto de apoio */
+.inicio__texto { margin-bottom: 28px; font-size: 1.1rem; max-width: 520px; }
+
+/* Botão padrão do site */
+.botao {
+  display: inline-block; border: 0; cursor: pointer;         /* formato de botão */
+  background: var(--rosa-escuro); color: #fff;               /* cores */
+  padding: 14px 28px; border-radius: 30px;                   /* tamanho e cantos */
+  font: 600 1rem 'Nunito', sans-serif; text-decoration: none; /* letra */
+  transition: transform .2s, background .2s;                 /* animação suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover { background: #b5655a; transform: translateY(-2px); }
+
+/* Quadro de compromisso */
+.quadro { background: #fff; padding: 30px; border-radius: var(--raio); border-left: 6px solid var(--verde-escuro); }
+
+/* Título do quadro */
+.quadro__titulo { font-weight: 600; color: var(--verde-escuro); margin-bottom: 8px; }
+
+/* Lista do quadro sem marcadores padrão */
+.quadro ul { list-style: none; margin-top: 14px; }
+
+/* Cada item ganha uma folhinha */
+.quadro li::before { content: "✿ "; color: var(--rosa-escuro); }
+
+/* ---------- Seções ---------- */
+.secao { padding: 80px 0; }                      /* espaço interno das seções */
+.secao--rosada { background: var(--rosa); }      /* variação rosada */
+.secao--verde { background: var(--verde); }      /* variação verde */
+
+/* Sobre: duas colunas */
+.sobre { display: grid; grid-template-columns: 1fr 1.4fr; gap: 50px; }
+
+/* Espaço entre parágrafos do sobre */
+.sobre p + p { margin-top: 14px; }
+
+/* ---------- Cartões ---------- */
+.cartoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin-top: 30px; }
+
+/* Aparência de cada cartão */
+.cartao { background: #fff; padding: 26px; border-radius: var(--raio); box-shadow: 0 4px 14px rgba(80, 50, 40, .07); }
+
+/* Título do cartão */
+.cartao h3 { font-family: 'Lora', serif; font-size: 1.2rem; margin-bottom: 8px; }
+
+/* Informação de dia e duração */
+.cartao small { display: block; color: var(--verde-escuro); font-weight: 600; margin-bottom: 10px; }
+
+/* Link de agendar dentro do cartão */
+.cartao a { color: var(--rosa-escuro); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 12px; }
+
+/* Cartão em coluna, para a imagem ficar sempre no final */
+.cartao { display: flex; flex-direction: column; }
+
+/* Espaço entre o texto e a imagem */
+.cartao p { margin-bottom: 14px; }
+
+/* Imagem do cartão, mesmo tamanho em todos e sem distorcer */
+.cartao img { width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-top: auto; }
+
+/* Link de agendar fica logo abaixo da imagem */
+.cartao img + a { margin-top: 14px; }
+
+/* ---------- Agendamento ---------- */
+.agenda { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+
+/* Caixa do formulário */
+.formulario { background: #fff; padding: 30px; border-radius: var(--raio); display: grid; gap: 8px; }
+
+/* Rótulos dos campos */
+.formulario label { font-weight: 600; font-size: .95rem; }
+
+/* Campos de texto e listas */
+.formulario input, .formulario select {
+  padding: 12px; border: 1px solid #d9cfc6; border-radius: 10px; /* borda suave */
+  font: inherit; margin-bottom: 8px; background: var(--creme);   /* herda a fonte */
+}
+
+/* Destaque ao clicar no campo */
+.formulario input:focus, .formulario select:focus { outline: 2px solid var(--rosa-escuro); }
+
+/* ---------- Rodapé ---------- */
+.rodape { padding: 26px 0; text-align: center; font-size: .9rem; color: #7a6d65; }
+
+/* ---------- Celular ---------- */
+@media (max-width: 760px) {
+  .inicio__grade, .sobre, .agenda { grid-template-columns: 1fr; gap: 30px; } /* uma coluna só */
+  .menu-botao { display: block; }                                           /* mostra o botão do menu */
+  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0;  /* menu escondido por padrão */
+          background: var(--creme); padding: 10px 5%; flex-direction: column; }
+  .menu.aberto { display: flex; }                                           /* menu aberto pelo clique */
+  .menu a { margin: 10px 0; }                                               /* espaço entre links */
+}
+
+
+JS
+
+// Número do WhatsApp do instituto (código do país + DDD + número, sem espaços). TROQUE PELO NÚMERO REAL.
+const WHATSAPP = "5591999999999";
+
+// Lista das oficinas oferecidas (edite à vontade). O campo "imagem" aparece no lugar do link "Agendar"
+const oficinas = [
+  { nome: "Roda de gestantes", info: "Semanal · 2h", texto: "Troca de experiências com outras mamães e orientação de profissionais.", imagem: "imagens/Roda-de-gestantes.JPEG" },
+  { nome: "Oficina de preparação para o parto", info: "Semanal· 3h", texto: "Tipos de parto, plano de parto, sinais do trabalho de parto e direitos da gestante.", imagem: "imagens/Oficina-de-preparação-para-o-parto.JPEG" },
+  { nome: "Treinamento para pais e acompanhantes", info: "Semanal · 2h", texto: "Como apoiar a gestante e participar dos cuidados com o bebê.", imagem: "imagens/Treinamento-para-pais-e-acompanhantes.JPEG" },
+  { nome: "Oficina de amamentação", info: "Semanal · 2h", texto: "Pega correta, posições, desafios comuns e como pedir ajuda.", imagem: "imagens/Oficina-de-amamentação.JPEG" }
+];
+
+// Lista dos minicursos oferecidos (edite à vontade)
+const minicursos = [
+  { nome: "Primeiros socorros para bebês", info: "3 encontros", texto: "Prevenção de acidentes, engasgo, reconhecimento de emergências e demonstração de manobras em manequins, com instrutor capacitado.", imagem: "imagens/Primeiros-socorros-para-bebês.png" },
+  { nome: "Sinais de alerta na gestação", info: "1 encontro", texto: "Reconhecimento dos principais sinais de risco na gestação, como sangramentos, dores intensas, febre e diminuição dos movimentos do bebê, e orientações sobre quando procurar atendimento de saúde.", imagem: "imagens/Sinais de alerta na gestação.png" },
+  { nome: "Saúde emocional no puerpério", info: "4 encontros", texto: "Mudanças emocionais após o parto, estratégias de autocuidado, fortalecimento da rede de apoio e identificação de sinais de alerta para a saúde mental materna.", imagem: "imagens/Saúde emocional no puerpério.png" }
+];
+
+// Guarda o texto da mensagem para cada cartão, usado no link do WhatsApp
+function linkWhats(mensagem) {
+  // Monta o endereço do WhatsApp com a mensagem já codificada
+  return "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensagem);
+}
+
+// Cria os cartões de uma lista dentro de um elemento da página
+function montarCartoes(lista, idDoElemento) {
+  // Procura o elemento onde os cartões serão colocados
+  const destino = document.getElementById(idDoElemento);
+  // Passa por cada item da lista
+  lista.forEach(function (item) {
+    // Cria a caixa do cartão
+    const cartao = document.createElement("article");
+    // Dá a ela a classe de estilo
+    cartao.className = "cartao";
+    // Começa sem imagem
+    let imagem = "";
+    // Se o item tem imagem, monta a tag da imagem
+    if (item.imagem) {
+      imagem = '<img src="' + item.imagem + '" alt="' + item.nome + '">';
+    }
+    // O link de agendar aparece sempre, logo abaixo da imagem
+    const link = '<a href="' + linkWhats("Olá! Gostaria de agendar: " + item.nome) + '" target="_blank" rel="noopener">Agendar →</a>';
+    // Preenche o conteúdo do cartão
+    cartao.innerHTML =
+      "<h3>" + item.nome + "</h3>" +
+      "<small>" + item.info + "</small>" +
+      "<p>" + item.texto + "</p>" +
+      imagem + link;
+    // Coloca o cartão na página
+    destino.appendChild(cartao);
+  });
+}
+
+// Chama a criação dos cartões das duas seções
+montarCartoes(oficinas, "listaOficinas");
+montarCartoes(minicursos, "listaMinicursos");
+
+// Preenche a lista de interesses do formulário com oficinas e minicursos
+const campoInteresse = document.getElementById("interesse");
+// Junta as duas listas em uma só e cria uma opção para cada
+oficinas.concat(minicursos).forEach(function (item) {
+  // Cria a opção
+  const opcao = document.createElement("option");
+  // Define o texto exibido
+  opcao.textContent = item.nome;
+  // Adiciona na lista
+  campoInteresse.appendChild(opcao);
+});
+// Adiciona "Agendar consulta" como primeira opção do formulário
+campoInteresse.insertAdjacentHTML("afterbegin", "<option>Agendar consulta</option>");
+// Adiciona uma opção para quem ainda não sabe o que escolher
+campoInteresse.insertAdjacentHTML("beforeend", "<option>Ainda não sei, quero conversar</option>");
+
+// Quando o formulário for enviado, abre o WhatsApp
+document.getElementById("formAgenda").addEventListener("submit", function (evento) {
+  // Impede a página de recarregar
+  evento.preventDefault();
+  // Lê o que a pessoa preencheu
+  const nome = document.getElementById("nome").value.trim();
+  const fase = document.getElementById("fase").value;
+  const interesse = campoInteresse.value;
+  // Monta a mensagem que chegará pronta no WhatsApp
+  const mensagem = "Olá! Meu nome é " + nome + ". Sou: " + fase + ". Tenho interesse em: " + interesse + ". Gostaria de agendar.";
+  // Abre o WhatsApp em uma nova aba
+  window.open(linkWhats(mensagem), "_blank");
+});
+
+// Abre e fecha o menu no celular
+const menu = document.getElementById("menu");
+// Ao clicar no botão, alterna a classe "aberto"
+document.getElementById("menuBotao").addEventListener("click", function () {
+  menu.classList.toggle("aberto");
+});
+// Ao clicar em um link do menu, ele se fecha
+menu.addEventListener("click", function () {
+  menu.classList.remove("aberto");
+});
+
+// Escreve o ano atual no rodapé
+document.getElementById("ano").textContent = new Date().getFullYear();

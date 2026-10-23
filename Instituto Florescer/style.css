@@ -1,0 +1,225 @@
+/* Cores e medidas usadas em todo o site */
+:root {
+  --creme: #fbf6f0;            /* fundo geral, tom de creme */
+  --rosa: #f4dcd6;             /* rosa suave das seções */
+  --rosa-escuro: #b5655a;      /* rosa terroso para destaques */
+  --verde: #dfe8dc;            /* verde bem claro */
+  --verde-escuro: #4f6b55;     /* verde para textos de destaque */
+  --texto: #3d3530;            /* marrom quase preto, mais suave que preto */
+  --raio: 18px;                /* arredondamento padrão */
+}
+
+/* Zera margens e usa cálculo de tamanho mais simples */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Rolagem suave ao clicar nos links do menu */
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+
+/* Aparência geral do texto */
+body {
+  font-family: 'Nunito', Arial, sans-serif; /* fonte dos textos */
+  background: var(--creme);                 /* cor de fundo */
+  color: var(--texto);                      /* cor do texto */
+  line-height: 1.7;                         /* espaço entre linhas */
+}
+
+/* Caixa que limita a largura do conteúdo */
+.container { width: min(1050px, 90%); margin: 0 auto; }
+
+/* Títulos usam fonte com serifa */
+h1, h2, .logo { font-family: 'Lora', Georgia, serif; line-height: 1.25; }
+
+/* Tamanho do título principal */
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 18px; }
+
+/* Tamanho dos títulos de seção */
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 20px; }
+
+/* Etiqueta pequena acima dos títulos */
+.etiqueta {
+  color: var(--rosa-escuro);   /* cor da etiqueta */
+  font-weight: 600;            /* letra mais firme */
+  font-size: .9rem;            /* tamanho menor */
+  margin-bottom: 8px;          /* espaço abaixo */
+}
+
+/* ---------- Cabeçalho ---------- */
+.topo {
+  position: sticky; top: 0; z-index: 10;       /* fica fixo no topo */
+  background: rgba(251, 246, 240, .95);        /* creme quase opaco */
+  border-bottom: 1px solid #eadfd6;            /* linha fina embaixo */
+}
+
+/* Alinha logo e menu lado a lado */
+.topo__interno { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+
+/* Estilo do nome do instituto */
+.logo { font-size: 1.4rem; font-weight: 600; text-decoration: none; color: var(--texto); }
+
+/* Logo em imagem: altura fixa e largura proporcional */
+.logo img { display: block; height: 68px; width: auto; }
+
+/* Links do menu */
+.menu a { margin-left: 22px; text-decoration: none; color: var(--texto); font-weight: 600; }
+
+/* Muda a cor ao passar o mouse */
+.menu a:hover { color: var(--rosa-escuro); }
+
+/* Link "Agendar" parecido com botão */
+.menu__destaque { background: var(--rosa-escuro); color: #fff !important; padding: 8px 18px; border-radius: 30px; }
+
+/* Botão do menu escondido no computador */
+.menu-botao { display: none; background: none; border: 0; font-size: 1.6rem; cursor: pointer; color: var(--texto); }
+
+/* ---------- Abertura ---------- */
+.inicio { padding: 70px 0 60px; background: linear-gradient(180deg, var(--rosa) 0%, var(--creme) 100%); }
+
+/* Duas colunas: texto e quadro */
+.inicio__grade { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: center; }
+
+/* Texto de apoio */
+.inicio__texto { margin-bottom: 28px; font-size: 1.1rem; max-width: 520px; }
+
+/* Botão padrão do site */
+.botao {
+  display: inline-block; border: 0; cursor: pointer;         /* formato de botão */
+  background: var(--rosa-escuro); color: #fff;               /* cores */
+  padding: 14px 28px; border-radius: 30px;                   /* tamanho e cantos */
+  font: 600 1rem 'Nunito', sans-serif; text-decoration: none; /* letra */
+  transition: transform .2s, background .2s;                 /* animação suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover { background: #9c5348; transform: translateY(-2px); }
+
+/* Quadro de compromisso */
+.quadro { background: #fff; padding: 30px; border-radius: var(--raio); border-left: 6px solid var(--verde-escuro); }
+
+/* Título do quadro */
+.quadro__titulo { font-weight: 600; color: var(--verde-escuro); margin-bottom: 8px; }
+
+/* Lista do quadro sem marcadores padrão */
+.quadro ul { list-style: none; margin-top: 14px; }
+
+/* Cada item ganha uma folhinha */
+.quadro li { position: relative; padding-left: 26px; margin-bottom: 18px; }
+.quadro li::before { content: "✿"; position: absolute; left: 0; color: var(--rosa-escuro); }
+.quadro li b { display: block; font-weight: 700; }
+.quadro li p { margin: 2px 0 0; font-size: .95rem; }
+
+/* ---------- Seções ---------- */
+.secao { padding: 80px 0; }                      /* espaço interno das seções */
+.secao--rosada { background: var(--rosa); }      /* variação rosada */
+.secao--verde { background: var(--verde); }      /* variação verde */
+
+/* Sobre: duas colunas */
+.sobre { display: grid; grid-template-columns: 1fr 1.4fr; gap: 50px; }
+
+/* Espaço entre parágrafos do sobre */
+.sobre p + p { margin-top: 14px; }
+
+/* ---------- Cartões ---------- */
+.cartoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin-top: 30px; }
+
+/* Aparência de cada cartão */
+.cartao { background: #fff; padding: 26px; border-radius: var(--raio); box-shadow: 0 4px 14px rgba(80, 50, 40, .07); transition: transform .25s, box-shadow .25s; }
+
+/* Cartão sobe um pouco ao passar o mouse */
+.cartao:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(80, 50, 40, .12); }
+
+/* Título do cartão */
+.cartao h3 { font-family: 'Lora', serif; font-size: 1.2rem; margin-bottom: 8px; }
+
+/* Informação de dia e duração */
+.pilula { align-self: flex-start; background: var(--verde); color: var(--verde-escuro); font-weight: 600; font-size: .82rem; padding: 3px 12px; border-radius: 20px; margin-bottom: 12px; }
+
+/* Link de agendar dentro do cartão */
+.cartao a { align-self: flex-start; margin-top: 14px; padding: 8px 18px; border: 1.5px solid var(--rosa-escuro); border-radius: 30px; color: var(--rosa-escuro); font-weight: 600; text-decoration: none; transition: background .2s, color .2s; }
+
+/* Botão Agendar preenche ao passar o mouse */
+.cartao a:hover { background: var(--rosa-escuro); color: #fff; }
+
+/* Cartão em coluna, para a imagem ficar sempre no final */
+.cartao { display: flex; flex-direction: column; }
+
+/* Espaço entre o texto e a imagem */
+.cartao p { margin-bottom: 14px; font-size: .95rem; }
+
+/* Imagem do cartão, mesmo tamanho em todos e sem distorcer */
+.cartao img { width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-top: auto; }
+
+/* Link de agendar fica logo abaixo da imagem */
+.cartao img + a { margin-top: 14px; }
+
+/* ---------- Agendamento ---------- */
+.agenda { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+
+/* Caixa do formulário */
+.formulario { background: #fff; padding: 30px; border-radius: var(--raio); display: grid; gap: 8px; }
+
+/* Rótulos dos campos */
+.formulario label { font-weight: 600; font-size: .95rem; }
+
+/* Campos de texto e listas */
+.formulario input, .formulario select {
+  padding: 12px; border: 1px solid #d9cfc6; border-radius: 10px; /* borda suave */
+  font: inherit; margin-bottom: 8px; background: var(--creme);   /* herda a fonte */
+}
+
+/* Destaque ao clicar no campo */
+.formulario input:focus, .formulario select:focus { outline: 2px solid var(--rosa-escuro); }
+
+/* ---------- Rodapé ---------- */
+.rodape { padding: 70px 0 26px; color: #6b5f58; font-size: .95rem; }
+
+/* Rodapé em duas colunas */
+.rodape__grade { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+
+/* Títulos do rodapé */
+.rodape__titulo { font-family: 'Lora', serif; font-weight: 600; color: var(--texto); font-size: 1.1rem; }
+
+/* Links do rodapé */
+.rodape a { color: var(--rosa-escuro); font-weight: 600; text-decoration: none; }
+
+/* Sublinhado só aparece ao passar o mouse */
+.rodape a:hover { text-decoration: underline; }
+
+/* Linha de direitos autorais */
+.rodape__direitos { text-align: center; margin-top: 30px; font-size: .85rem; }
+
+/* ---------- Bordas onduladas entre as seções ---------- */
+.onda { position: relative; --onda: var(--creme); }          /* cor padrão da onda: creme */
+.onda--rosa { --onda: var(--rosa); }                          /* onda rosa */
+.onda--verde { --onda: var(--verde); }                        /* onda verde */
+.onda::before {
+  content: ""; position: absolute; top: -1px; left: 0;        /* cola no topo da seção */
+  width: 100%; height: 40px; background: var(--onda);         /* cor da seção de cima */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1200V18C1000 42 700 4 450 22C250 36 100 30 0 18Z'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1200V18C1000 42 700 4 450 22C250 36 100 30 0 18Z'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+}
+
+/* ---------- Informações ao lado do formulário ---------- */
+.agenda__info { list-style: none; margin-top: 18px; }
+.agenda__info li::before { content: "✿ "; color: var(--rosa-escuro); }
+.agenda__info li { margin-bottom: 6px; }
+
+/* ---------- Botão flutuante do WhatsApp ---------- */
+.whats-flutuante {
+  position: fixed; right: 20px; bottom: 20px; z-index: 20;    /* fixo no canto da tela */
+  width: 56px; height: 56px; border-radius: 50%;              /* redondo */
+  background: var(--verde-escuro); display: flex;             /* fundo verde escuro */
+  align-items: center; justify-content: center;               /* centraliza o ícone */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .2); transition: transform .2s;
+}
+.whats-flutuante:hover { transform: scale(1.08); }            /* cresce ao passar o mouse */
+
+/* ---------- Celular ---------- */
+@media (max-width: 760px) {
+  .inicio__grade, .sobre, .agenda { grid-template-columns: 1fr; gap: 30px; } /* uma coluna só */
+  .menu-botao { display: block; }                                           /* mostra o botão do menu */
+  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0;  /* menu escondido por padrão */
+          background: var(--creme); padding: 10px 5%; flex-direction: column; }
+  .menu.aberto { display: flex; }                                           /* menu aberto pelo clique */
+  .menu a { margin: 10px 0; }                                               /* espaço entre links */
+  .rodape__grade { grid-template-columns: 1fr; }                            /* rodapé em uma coluna */
+}
