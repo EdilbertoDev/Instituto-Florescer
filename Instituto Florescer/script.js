@@ -13,7 +13,8 @@ const oficinas = [
 const minicursos = [
   { nome: "Primeiros socorros para bebês", info: "Disponível semanalmente", texto: "Prevenção de acidentes, engasgo, reconhecimento de emergências e demonstração de manobras em manequins, com instrutor capacitado.", imagem: "imagens/Primeiros-socorros-para-bebês.png" },
   { nome: "Sinais de alerta na gestação", info: "Disponível semanalmente", texto: "Reconhecimento dos principais sinais de risco na gestação, como sangramentos, dores intensas, febre e diminuição dos movimentos do bebê, e orientações sobre quando procurar atendimento de saúde.", imagem: "imagens/Sinais de alerta na gestação.png" },
-  { nome: "Saúde emocional no puerpério", info: "Disponível semanalmente", texto: "Mudanças emocionais após o parto, estratégias de autocuidado, fortalecimento da rede de apoio e identificação de sinais de alerta para a saúde mental materna.", imagem: "imagens/Saúde emocional no puerpério.png" }
+  { nome: "Saúde emocional no puerpério", info: "Disponível semanalmente", texto: "Mudanças emocionais após o parto, estratégias de autocuidado, fortalecimento da rede de apoio e identificação de sinais de alerta para a saúde mental materna.", imagem: "imagens/Saúde emocional no puerpério.png
+" }
 ];
 
 // Guarda o texto da mensagem para cada cartão, usado no link do WhatsApp
